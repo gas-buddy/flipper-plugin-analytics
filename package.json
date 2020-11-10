@@ -1,0 +1,34 @@
+{
+  "$schema": "https://fbflipper.com/schemas/plugin-package/v2.json",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:gas-buddy/gb-services.git/flipper-plugin-analytics.git"
+  },
+  "name": "flipper-plugin-analytics",
+  "description": "A simple plugin to display a table of analytics events from a mobile app",
+  "id": "Analytics",
+  "version": "1.0.0",
+  "main": "dist/bundle.js",
+  "flipperBundlerEntry": "src/index.tsx",
+  "license": "MIT",
+  "keywords": [
+    "flipper-plugin"
+  ],
+  "icon": "apps",
+  "title": "Analytics",
+  "scripts": {
+    "lint": "flipper-pkg lint",
+    "prepack": "flipper-pkg lint && flipper-pkg bundle",
+    "build": "flipper-pkg bundle",
+    "watch": "flipper-pkg bundle --watch"
+  },
+  "peerDependencies": {
+    "flipper": "latest"
+  },
+  "devDependencies": {
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "flipper": "latest",
+    "flipper-pkg": "latest"
+  }
+}
